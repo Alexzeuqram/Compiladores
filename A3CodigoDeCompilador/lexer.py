@@ -28,13 +28,11 @@ reserved = {
     'DIF' : 'DIFERENCIA',
     'MENOR' : 'MenorA',
     'MAYOR' : 'MayorA'
-    
-    
 }
 
 
 tokens = list(tokens) + list(reserved.values())
-# Expresiones Regulares de reconocimiento
+
 def t_NUMERO(t):
     r'\d+'
     t.value = int(t.value)
@@ -63,19 +61,16 @@ t_for = 'ROF'
 t_boolean = 'NAELOOB'
 
 
-#t_ID = r'[a-zA-Z_][a-zA-Z0-9_]+' 
-
-# Caracteres ignorados
 t_ignore = ' \t\n'
 
-# Manejo de Errores
+
 lexer = lex.lex()
 
 def t_ERROR(t):
     print("Token desconocido: '%s'" % t.value[0])
     t.lexer.skip(1)
 
-with open('A3CodigoDeCompilador/data.txt', 'r') as file:  #Con With creamos la instancia y una vez terminado destruye la instancia.
+with open('A3CodigoDeCompilador/data.txt', 'r') as file:  
     data = file.read()
     lexer.input(data)
     
