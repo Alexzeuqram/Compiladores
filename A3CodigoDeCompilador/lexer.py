@@ -75,7 +75,7 @@ def t_ERROR(t):
     print("Token desconocido: '%s'" % t.value[0])
     t.lexer.skip(1)
 
-with open('CodigoDeCompilador/data.txt', 'r') as file:  #Con With creamos la instancia y una vez terminado destruye la instancia.
+with open('A3CodigoDeCompilador/data.txt', 'r') as file:  #Con With creamos la instancia y una vez terminado destruye la instancia.
     data = file.read()
     lexer.input(data)
     
