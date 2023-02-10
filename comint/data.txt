@@ -1,0 +1,19 @@
+Reserved Words
+TNI 
+TAOLF
+FI
+ESLE
+ELIHW
+ROF
+NAELOOB
+
+Tokens
+1 2 3
+MAS
+MENOS
+POR
+ENTRE
+::
+
+TNI alexAge :: 27;
+
