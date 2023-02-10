@@ -1,4 +1,4 @@
-Reserved Words
+
 TNI 
 TAOLF
 FI
@@ -7,13 +7,16 @@ ELIHW
 ROF
 NAELOOB
 
-Tokens
+
 1 2 3
 MAS
 MENOS
 POR
 ENTRE
 ::
+MENOR
+MAYOR
 
 TNI alexAge :: 27;
+DIF
 

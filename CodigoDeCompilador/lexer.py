@@ -8,7 +8,10 @@ tokens = (
     'ENTRE',
     'ID',
     'IGUAL',
-    'DELIMITADOR'
+    'DELIMITADOR',
+    'MENOR',
+    'MAYOR',
+    
 )
 reserved = {
     'TNI' : 'int', 
@@ -21,7 +24,11 @@ reserved = {
     'MAS' : 'SUMA',
     'MENOS' : 'RESTA',
     'POR' : 'MULTIPLICACION',
-    'ENTRE' : 'DIVISION'
+    'ENTRE' : 'DIVISION',
+    'DIF' : 'DIFERENCIA',
+    'MENOR' : 'MenorA',
+    'MAYOR' : 'MayorA'
+    
     
 }
 
@@ -44,6 +51,9 @@ t_POR = r'POR'
 t_ENTRE = r'ENTRE'
 t_IGUAL = r'::' 
 t_DELIMITADOR = r';'
+t_DIFERENCIA = r'DIF'
+t_MENOR = 'MENOR'
+t_MAYOR = 'MAYOR'
 
 t_float = 'TAOLF'
 t_if = 'FI'
@@ -65,7 +75,7 @@ def t_ERROR(t):
     print("Token desconocido: '%s'" % t.value[0])
     t.lexer.skip(1)
 
-with open('data.txt', 'r') as file:  #Con With creamos la instancia y una vez terminado destruye la instancia.
+with open('CodigoDeCompilador/data.txt', 'r') as file:  #Con With creamos la instancia y una vez terminado destruye la instancia.
     data = file.read()
     lexer.input(data)
     
