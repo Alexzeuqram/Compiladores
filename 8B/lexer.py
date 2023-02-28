@@ -43,10 +43,10 @@ def t_ID(t):
     t.type = reserved.get(t.value, 'VARIABLE')
     return t  
 
-t_MAS = r'MAS'
-t_MENOS = r'MENOS'
-t_POR = r'POR'
-t_ENTRE = r'ENTRE'
+t_MAS = r'\+'
+t_MENOS = r'-'
+t_POR = r'\*'
+t_ENTRE = r'/'
 t_IGUAL = r'::' 
 t_DELIMITADOR = r';'
 t_DIFERENCIA = r'DIF'
@@ -70,7 +70,7 @@ def t_ERROR(t):
     print("Token desconocido: '%s'" % t.value[0])
     t.lexer.skip(1)
 
-with open('A3CodigoDeCompilador/data.txt', 'r') as file:  
+with open('data.txt', 'r') as file:  
     data = file.read()
     lexer.input(data)
     
