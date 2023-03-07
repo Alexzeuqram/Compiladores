@@ -28,6 +28,11 @@ def p_expresion_DIVISION(p):
     p[0] = p[1] / p[3]
     print('Expresion division fue escrita de manera correcta')
 
+def p_expresion_MULTIPLICACION(p):
+    'expresion : expresion MULTIPLICACION termino'
+    p[0] = p[1] * p[3]
+    print('Expresion multiplicacion fue escrita de manera correcta')
+
 def p_expresion_ID(p):
     'expresion : termino'
     p[0] = p[1]
