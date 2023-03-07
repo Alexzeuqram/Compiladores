@@ -43,8 +43,9 @@ def t_ID(t):
     t.type = reserved.get(t.value, 'VARIABLE')
     return t  
 
-t_MAS = r'\+'
-t_MENOS = r'-'
+t_MAS = r'SUMA'
+t_MENOS = r'RESTA'
+
 t_POR = r'\*'
 t_ENTRE = r'/'
 t_IGUAL = r'::' 
@@ -70,7 +71,7 @@ def t_ERROR(t):
     print("Token desconocido: '%s'" % t.value[0])
     t.lexer.skip(1)
 
-with open('data.txt', 'r') as file:  
+with open('8B/data.txt', 'r') as file:  
     data = file.read()
     lexer.input(data)
     

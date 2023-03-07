@@ -13,14 +13,20 @@ factor :  NUMERO
 
 
 '''
-def p_expresion_MAS(p):
-    'expresion : expresion MAS termino'
-    #p[0] = p[1] + p[3]
+def p_expresion_SUMA(p):
+    'expresion : expresion SUMA termino'
+    p[0] = p[1] + p[3]
     print('Expresión SUMA escrita de manera CORRECTA')
     
-def p_expresion_MENOS(p):
-    'expresion : expresion MENOS termino'
+def p_expresion_RESTA(p):
+    'expresion : expresion RESTA termino'
     p[0] = p[1] - p[3]
+    print('Expresion Resta fue escrita de manera correcta')
+
+def p_expresion_DIVISION(p):
+    'expresion : expresion DIVISION termino'
+    p[0] = p[1] / p[3]
+    print('Expresion division fue escrita de manera correcta')
 
 def p_expresion_ID(p):
     'expresion : termino'
@@ -36,6 +42,8 @@ def p_factor_NUMERO(p):
 
 def p_error(p):
     print('Error de Sintaxs')
+
+
 
 parser = yacc.yacc()
 
