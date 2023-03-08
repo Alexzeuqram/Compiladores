@@ -1,6 +1,9 @@
 import ply.lex as lex
 
 tokens = (
+    'bandera_T',
+    'TAOLF',
+    'VARIABLE',
     'NUMERO',
     'MAS',
     'MENOS',
@@ -15,10 +18,18 @@ tokens = (
 )
 reserved = {
     'TNI' : 'int', 
+    'TRUE' : 'bandera_T',
+    'FALSE' : 'bandera_F',
+    '<' : 'PARENTESIS_IZQ',
+    '>' : 'PARENTESIS_DER',
+    '{':'CORCHETE_IZQ',
+    '}': 'CORCHETE_DER',
+    '\+\+' : 'INCREMENTO',
     'TAOLF' : 'float',
     'FI' : 'if',
     'ESLE' : 'else',
     'ELIHW': 'while',
+    'DO': 'DO',
     'ROF' : 'for',
     'NAELOOB' : 'boolean',
     'MAS' : 'SUMA',
@@ -45,18 +56,21 @@ def t_ID(t):
 
 t_MAS = r'SUMA'
 t_MENOS = r'RESTA'
-
 t_POR = r'\*'
 t_ENTRE = r'/'
 t_IGUAL = r'::' 
+t_PARENTESIS_IZQ = r'<'
+t_PARENTESIS_DER = r'>'
+t_CORCHETE_IZQ = r'{'
+t_CORCHETE_DER = r'}'
+t_INCREMENTO = r'\+\+'
 t_DELIMITADOR = r';'
 t_DIFERENCIA = r'DIF'
 t_MENOR = 'MENOR'
 t_MAYOR = 'MAYOR'
-
-t_float = 'TAOLF'
 t_if = 'FI'
 t_else = 'ESLE'
+t_DO = 'DO'
 t_while = 'ELIHW'
 t_for = 'ROF'
 t_boolean = 'NAELOOB'
