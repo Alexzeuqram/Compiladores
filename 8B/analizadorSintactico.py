@@ -85,87 +85,87 @@ def p_condicional_IF_DIFERENTE_A_VAR(p):
 
 def p_condicional_IF_MAYOR(p):
     'expresion : if PARENTESIS_IZQ VARIABLE  MayorA  termino PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER'
-    print('Declaracion de condicional if MAYOR A con VARIABLE escrita de manera correcta')
+    print('Declaracion de condicional if MAYOR A escrita de manera correcta')
 
 def p_condicional_IF_MENOR(p):
     'expresion : if PARENTESIS_IZQ VARIABLE  MenorA  termino PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER'
-    print('Declaracion de condicional if MENOR A con VARIABLE escrita de manera correcta')
+    print('Declaracion de condicional if MENOR A escrita de manera correcta')
 
 def p_condicional_IF_MENOR_ELSE(p):
     'expresion : if PARENTESIS_IZQ VARIABLE  MenorA  termino PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER else CORCHETE_IZQ CORCHETE_DER '
-    print('Declaracion de condicional if ELSE MENOR A con VARIABLE escrita de manera correcta')
+    print('Declaracion de condicional if ELSE MENOR A escrita de manera correcta')
 
 def p_condicional_IF_IGUAL_ELSE(p):
     'expresion : if PARENTESIS_IZQ VARIABLE IGUAL IGUAL termino PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER else CORCHETE_IZQ CORCHETE_DER'
-    print('Declaracion de condicional if ELSE IGUAL con VARIABLE escrita de manera correcta')
+    print('Declaracion de condicional if ELSE IGUAL escrita de manera correcta')
 
 def p_condicional_IF_IGUAL_MAYOR_ELSE(p):
     'expresion : if PARENTESIS_IZQ VARIABLE  MayorA IGUAL termino PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER else CORCHETE_IZQ CORCHETE_DER'
-    print('Declaracion de condicional if ELSE IGUAL MAYOR A con VARIABLE escrita de manera correcta')
+    print('Declaracion de condicional if ELSE IGUAL MAYOR A escrita de manera correcta')
 
 def p_expresion_DECLARACION_IF_IGUAL_MENOR_ELSE(p):
     'expresion : if PARENTESIS_IZQ VARIABLE  MenorA IGUAL termino PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER else CORCHETE_IZQ CORCHETE_DER'
-    print('If ELSE igual o menor aceptado')
+    print('Declaracion de condicional if ELSE IGUAL MENOR A escrita de manera correcta')
 
 def p_expresion_DECLARACION_IF_DIFERENTE_A_ELSE(p):
     'expresion : if PARENTESIS_IZQ VARIABLE  DIFERENCIA termino PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER else CORCHETE_IZQ CORCHETE_DER'
-    print('If ELSE Diferencia de')
+    print('Declaracion de condicional if ELSE DIFERENTE A escrita de manera correcta')
 
 def p_expresion_DECLARACION_IF_IGUAL_IGUAL_VAR_ELSE(p):
     'expresion : if PARENTESIS_IZQ VARIABLE IGUAL IGUAL VARIABLE PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER else CORCHETE_IZQ CORCHETE_DER'
-    print('If ELSE igual aceptado')
+    print('Declaracion de condicional if ELSE IGUAL A con VARIABLE escrita de manera correcta')
 
 def p_expresion_DECLARACION_IF_IGUAL_MAYOR_VAR_ELSE(p):
     'expresion : if PARENTESIS_IZQ VARIABLE  MayorA IGUAL VARIABLE PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER else CORCHETE_IZQ CORCHETE_DER'
-    print('If ELSE igual o mayor aceptado')
+    print('Declaracion de condicional if ELSE IGUAL MAYOR A con VARIABLE escrita de manera correcta')
 
 def p_expresion_DECLARACION_IF_IGUAL_MENOR_VAR_ELSE(p):
     'expresion : if PARENTESIS_IZQ VARIABLE  MenorA IGUAL VARIABLE PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER else CORCHETE_IZQ CORCHETE_DER'
-    print('If ELSE igual o menor aceptado')
+    print('Declaracion de condicional if ELSE IGUAL MENOR A con VARIABLE escrita de manera correcta')
 
 def p_expresion_DECLARACION_IF_DIFERENTE_A_VAR_ELSE(p):
     'expresion : if PARENTESIS_IZQ VARIABLE  DIFERENCIA VARIABLE PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER else CORCHETE_IZQ CORCHETE_DER'
-    print('If ELSE Diferencia de')
+    print('Declaracion de condicional if ELSE  DIFERENCIA A con VARIABLE escrita de manera correcta')
 
 def p_expresion_DECLARACION_IF_MAYOR_ELSE(p):
     'expresion : if PARENTESIS_IZQ VARIABLE  MayorA  termino PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER else CORCHETE_IZQ CORCHETE_DER'
-    print('If ELSE mayor aceptado')
+    print('Declaracion de condicional if ELSE MAYOR A escrita de manera correcta')
 
 def p_expresion_DECLARACION_FOR_MAYOR(p):
     'expresion : for PARENTESIS_IZQ int VARIABLE  IGUAL  termino DELIMITADOR VARIABLE MayorA termino DELIMITADOR VARIABLE INCREMENTO PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER'
-    print('FOR MAYOR A ACEPTADO')
+    print('Declaracion de ciclo for MAYOR A escrita de manera correcta')
 
 def p_expresion_DECLARACION_FOR_MENOR(p):
     'expresion : for PARENTESIS_IZQ int VARIABLE  IGUAL  termino DELIMITADOR VARIABLE  MenorA termino DELIMITADOR VARIABLE INCREMENTO PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER'
-    print('FOR MENOR A ACEPTADO')
+    print('Declaracion de ciclo for MENOR A escrita de manera correcta')
 
 def p_expresion_DECLARACION_FOR_MENOR_IGUAL(p):
     'expresion : for PARENTESIS_IZQ int VARIABLE  IGUAL  termino DELIMITADOR VARIABLE IGUAL MenorA termino DELIMITADOR VARIABLE INCREMENTO PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER'
-    print('FOR MENOR IGUAL A ACEPTADO')
+    print('Declaracion de ciclo for MENOR IGUAL A escrita de manera correcta')
 
 def p_expresion_DECLARACION_FOR_MAYOR_IGUAL(p):
     'expresion : for PARENTESIS_IZQ int VARIABLE  IGUAL  termino DELIMITADOR VARIABLE IGUAL MayorA termino DELIMITADOR VARIABLE INCREMENTO PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER'
-    print('FOR MAYOR IGUAL A ACEPTADO')
+    print('Declaracion de ciclo for MAYOR IGUAL A escrita de manera correcta')
 
 def p_expresion_DECLARACION_FOR_MAYOR_DIFERENCIA(p):
     'expresion : for PARENTESIS_IZQ int VARIABLE  IGUAL  termino DELIMITADOR VARIABLE DIFERENCIA termino DELIMITADOR VARIABLE INCREMENTO PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER'
-    print('FOR DIFERENCIA A ACEPTADO')
+    print('Declaracion de ciclo for MAYOR DIFERENCIA A escrita de manera correcta')
 
 def p_expresion_DECLARACION_WHILE_MENOR(p):
     'expresion : while PARENTESIS_IZQ VARIABLE  MenorA  termino PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER'
-    print('WHILE MENOR A ACEPTADO')
+    print('Declaracion de ciclo WHILE MENOR A escrita de manera correcta')
 
 def p_expresion_DECLARACION_WHILE_MAYOR(p):
     'expresion : while PARENTESIS_IZQ VARIABLE  MayorA  termino PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER'
-    print('WHILE MAYOR A ACEPTADO')
+    print('Declaracion de ciclo WHILE MAYOR A escrita de manera correcta')
 
 def p_expresion_DECLARACION_DO_WHILE_MAYOR(p):
     'expresion : DO CORCHETE_IZQ CORCHETE_DER while PARENTESIS_IZQ VARIABLE  MayorA  termino PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER'
-    print(' DO WHILE MAYOR A ACEPTADO')
+    print(' Declaracion de ciclo DO WHILE MAYOR A escrita de manera correcta')
 
 def p_expresion_DECLARACION_DO_WHILE_MENOR(p):
     'expresion : DO CORCHETE_IZQ CORCHETE_DER while PARENTESIS_IZQ VARIABLE  MenorA  termino PARENTESIS_DER  CORCHETE_IZQ CORCHETE_DER'
-    print(' DO WHILE MENOR A ACEPTADO')
+    print('Declaracion de ciclo DO WHILE MENOR A escrita de manera correcta')
 
 
 
